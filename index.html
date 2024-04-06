@@ -14,34 +14,35 @@
         <br /><br />
         <img src="./assets/assest4.png" alt="vector-art" />
       </div>
-      <div class="form">
+      <div class="form" onsubmit="return validateForm()">
         <p class="member">Already a member? <a href="#">Sign in</a></p>
         <div class="form-class">
-          <form action="#" onsubmit="return validateForm()">
+          <form id="form" action="#">
             <h1 class="sign">Sign up to Dribble</h1>
             <p class="Error"></p>
             <div class="name-wrapper">
               <div class="name">
                 <label for="name">Name</label><br />
-                <input type="text" name="name" id="name" />
+                <input type="text" name="name" id="name"  />
               </div>
-              <div class="username">
+              <div class="username ">
                 <label for="username">Username</label><br />
-                <input type="text" name="username" id="username" />
+                <input type="text" name="username" id="username"  />
               </div>
             </div>
             <div class="email-pass-wrapper">
-              <div class="email">
+              <div class="email ">
                 <label for="email">Email</label><br />
-                <input type="email" name="email" id="email" />
+                <input type="email" name="email" id="email"  />
               </div>
-              <div class="password">
+              <div class="password ">
                 <label for="password">Password</label><br />
                 <input
                   type="password"
                   name="password"
                   id="password"
                   placeholder="6+ characters"
+                  
                 />
               </div>
             </div>
@@ -55,11 +56,12 @@
                   Creating an account means you're okay with our
                   <a href="#">Terms of Service,</a>
                   <a href="#">Privacy Policy,</a> and our default
-                  <a href="#">Notification Settings.</a></label>
+                  <a href="#">Notification Settings.</a></label
+                >
               </div>
             </div>
             <div>
-              <input type="submit" name="submit" id="submit" value="Create Account">
+              <button type="submit" id="submit">Create Account</button>
             </div>
           </form>
         </div>
