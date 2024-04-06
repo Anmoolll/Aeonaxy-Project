@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css" />
     <title>Profile creation</title>
   </head>
@@ -20,14 +21,15 @@
       </div>
       <div class="avatar">
         <div class="image">
-          <img src="../assets/camera.jpeg" alt="" />
+          <img src="../assets/camera.jpeg" alt="assets" id="Profile-pic" />
         </div>
         <div class="button">
           <div class="choose-image">
-            <button>Choose image</button>
+            <label for="input-file">Choose image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file"></input>
           </div>
           <div>
-            <button class="default">> Or choose one of our defaults</button>
+            <button class="default"><p>> Or choose one of our defaults</p></button>
           </div>
         </div>
       </div>
@@ -35,7 +37,8 @@
         <label for="location"><h2>Add your location</h2></label>
         <input type="text" name="location" id="location" placeholder="Enter a location">
       </div>
-      <button type="submit" disabled>Next</button>
+      <button type="submit" disabled="disabled">Next</button>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>
