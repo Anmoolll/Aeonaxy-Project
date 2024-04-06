@@ -23,11 +23,12 @@ nav img {
 main {
   margin-top: 15dvh;
   height: 100%;
-  margin-left: 35%;
+  margin: 6% 30%;
+  max-width: 600px;
 }
 
-main h2{
-    font-weight: 400;
+main h2 {
+  font-weight: 400;
 }
 main p {
   color: grey;
@@ -60,3 +61,22 @@ main p {
   align-items: center;
   padding-top: 1rem;
 }
+.location {
+  max-width: 100%;
+}
+#location {
+  width: 90%;
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: rgb(203, 203, 203);
+}
+button[type=submit]{
+    margin-top: 2rem;
+    height: 40px;
+    width: 170px;
+    border: none;
+    background-color: #ea4b8b;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
