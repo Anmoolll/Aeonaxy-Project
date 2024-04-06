@@ -67,7 +67,6 @@ body {
 }
 
 .Error {
-  visibility: hidden;
   color: red;
 }
 
@@ -117,7 +116,8 @@ input {
   width: 50%;
   max-width: 650px;
 }
-.create-account {
+
+input[type=submit]{
   margin-top: 2rem;
   height: 40px;
   width: 170px;
@@ -125,8 +125,8 @@ input {
   background-color: #ea4b8b;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
-
 
 @media screen and (max-width: 600px){
   .art{
