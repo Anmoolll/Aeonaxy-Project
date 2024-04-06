@@ -3,14 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
     <link rel="stylesheet" href="style.css" />
     <title>Dribble</title>
   </head>
   <body>
     <div class="container">
       <div class="art">
-        
         <h1>Discover the world's top Designer & Creative.</h1>
         <br /><br />
         <img src="./assets/assest4.png" alt="vector-art" />
@@ -18,9 +17,9 @@
       <div class="form">
         <p class="member">Already a member? <a href="#">Sign in</a></p>
         <div class="form-class">
-          <form action="#">
+          <form action="#" onsubmit="return validateForm()">
             <h1 class="sign">Sign up to Dribble</h1>
-            <p class="Error">* Username has already been taken</p>
+            <p class="Error"></p>
             <div class="name-wrapper">
               <div class="name">
                 <label for="name">Name</label><br />
@@ -31,13 +30,20 @@
                 <input type="text" name="username" id="username" />
               </div>
             </div>
-            <div class="email">
-              <label for="email">Email</label><br /> 
-              <input type="email" name="email" id="email" />
-            </div>
-            <div class="password">
-              <label for="password">Password</label><br />
-              <input type="password" name="password" id="password" placeholder="6+ characters"/>
+            <div class="email-pass-wrapper">
+              <div class="email">
+                <label for="email">Email</label><br />
+                <input type="email" name="email" id="email" />
+              </div>
+              <div class="password">
+                <label for="password">Password</label><br />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="6+ characters"
+                />
+              </div>
             </div>
             <br />
             <div class="terms">
@@ -53,11 +59,12 @@
               </div>
             </div>
             <div>
-              <button class="create-account">Create Account</button>
+              <input type="submit" name="submit" id="submit" value="Create Account">
             </div>
           </form>
         </div>
       </div>
     </div>
+    <script src="./script.js"></script>
   </body>
 </html>
