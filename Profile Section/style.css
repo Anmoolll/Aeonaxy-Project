@@ -1,0 +1,62 @@
+@font-face {
+  font-family: PLz;
+  src: url(../assets/PLZ.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: PLz;
+  /* align-items: center;
+  text-align: center; */
+}
+.heading {
+  margin-bottom: 10vh;
+}
+nav img {
+  height: 100px;
+  position: absolute;
+  left: 10px;
+  top: -15px;
+}
+
+main {
+  margin-top: 15dvh;
+  height: 100%;
+  margin-left: 35%;
+}
+
+main h2{
+    font-weight: 400;
+}
+main p {
+  color: grey;
+}
+
+.avatar {
+  display: flex;
+  gap: 2rem;
+}
+
+.choose-image {
+  margin-top: 30%;
+  margin-bottom: 10%;
+}
+.choose-image button {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid rgb(203, 203, 203);
+  border-radius: 4px;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+.default {
+  border: none;
+  background-color: white;
+  color: grey;
+  cursor: pointer;
+}
+.buttons {
+  align-items: center;
+  padding-top: 1rem;
+}
