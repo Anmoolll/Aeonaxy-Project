@@ -7,8 +7,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: PLz;
-  /* align-items: center;
-  text-align: center; */
 }
 .heading {
   margin-bottom: 10vh;
@@ -38,12 +36,16 @@ main p {
   display: flex;
   gap: 2rem;
 }
-
+#Profile-pic{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
 .choose-image {
   margin-top: 30%;
   margin-bottom: 10%;
 }
-.choose-image button {
+.choose-image label {
   height: 40px;
   padding: 10px;
   border: 1px solid rgb(203, 203, 203);
@@ -51,11 +53,16 @@ main p {
   background-color: #ffffff;
   cursor: pointer;
 }
+.choose-image input[type=file]{
+  display: none;
+}
 .default {
   border: none;
   background-color: white;
   color: grey;
   cursor: pointer;
+  font-family: PLz;
+  font-size: 16px;
 }
 .buttons {
   align-items: center;
@@ -70,13 +77,17 @@ main p {
   border-width: 0 0 2px;
   border-color: rgb(203, 203, 203);
 }
-button[type=submit]{
-    margin-top: 2rem;
-    height: 40px;
-    width: 170px;
-    border: none;
-    background-color: #ea4b8b;
-    color: white;
-    border-radius: 5px;
-    cursor: pointer;
-  }
+button[type="submit"] {
+  margin-top: 2rem;
+  height: 40px;
+  width: 170px;
+  border: none;
+  background-color: #ea4b8b;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:disabled{
+  background-color: #f8b8d0;
+  cursor: not-allowed;
+}
