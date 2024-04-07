@@ -91,3 +91,9 @@ button:disabled{
   background-color: #f8b8d0;
   cursor: not-allowed;
 }
+
+@media screen and (max-width: 950px) {
+  .avatar{
+    flex-direction: column;
+  }
+}
