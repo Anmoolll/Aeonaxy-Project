@@ -15,10 +15,17 @@ function closePopup() {
 
 popup.addEventListener('click', function(event){
     if(event.target.tagName === 'IMG'){
-        //handle image
         console.log("Selected image: " + event.target.src);
+        profilePic.src = event.target.src; // Set the selected image as the profile picture
+        closePopup(); // Close the popup after selecting the image
     }
 })
+
+popup.addEventListener('click', function(event){
+    if(event.target === popup){
+        closePopup();
+    }
+});
 
 inputFile.onchange = () => {
     profilePic.src = URL.createObjectURL(inputFile.files[0]);
@@ -34,6 +41,7 @@ inputLocation.addEventListener("input", function(){
 
 inputLocation.addEventListener("keyup", function(e){
     if (e.key === 'Enter') {
+        console.log("ENter")
         button.click();
     }
 })
