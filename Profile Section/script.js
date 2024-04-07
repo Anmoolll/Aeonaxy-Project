@@ -2,6 +2,23 @@ const profilePic = document.querySelector("#Profile-pic");
 const inputFile = document.querySelector("#input-file");
 const inputLocation = document.querySelector("#location");
 const button = document.querySelector("#submit");
+const chooseDefault = document.querySelector(".default");
+const popup = document.querySelector("#popup");
+
+chooseDefault.addEventListener("click", function(){
+    popup.style.display = 'block';
+});
+
+function closePopup() {
+    popup.style.display = 'none';
+}
+
+popup.addEventListener('click', function(event){
+    if(event.target.tagName === 'IMG'){
+        //handle image
+        console.log("Selected image: " + event.target.src);
+    }
+})
 
 inputFile.onchange = () => {
     profilePic.src = URL.createObjectURL(inputFile.files[0]);
