@@ -80,7 +80,7 @@ main p {
 button[type="submit"] {
   margin-top: 2rem;
   height: 40px;
-  width: 170px;
+  width: 200px;
   border: none;
   background-color: #ea4b8b;
   color: white;
@@ -91,6 +91,7 @@ button:disabled{
   background-color: #f8b8d0;
   cursor: not-allowed;
 }
+
 
 @media screen and (max-width: 950px) {
   .avatar{
