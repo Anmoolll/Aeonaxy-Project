@@ -19,7 +19,7 @@ function changeBorderColorWork(divWork){
     message.style.display = 'block';
     messageWork.style.display = 'block'
     button.removeAttribute('disabled');
-    divWork.querySelector("img").style.marginTop = '-40%';
+    divWork.querySelector("img").style.marginTop = '-20%';
 }
 
 function changeBorderColorHire(divHire){
@@ -27,7 +27,7 @@ function changeBorderColorHire(divHire){
     radioHire.checked=true;
     messageHire.style.display = 'block'
     button.removeAttribute('disabled');
-    divHire.querySelector("img").style.marginTop = '-40%';
+    divHire.querySelector("img").style.marginTop = '-20%';
 }
 
 function changeBorderColorInspo(divInspo){
@@ -35,6 +35,6 @@ function changeBorderColorInspo(divInspo){
     radioInspo.checked=true;
     messageInspo.style.display = 'block'
     button.removeAttribute('disabled');
-    divInspo.querySelector("img").style.marginTop = '-40%';
+    divInspo.querySelector("img").style.marginTop = '-20%';
     // divWork.querySelector('img').style.transition = 'margin-top 1.3s ease';
 }

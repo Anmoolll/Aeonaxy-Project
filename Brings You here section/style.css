@@ -43,10 +43,13 @@ main {
 }
 main h1 {
   font-weight: 400;
+  padding-top: 20px;
 }
 main .para {
   color: gray;
+  padding-top: 20px;
 }
+
 .card {
   height: 250px;
   width: auto;
@@ -55,7 +58,7 @@ main .para {
   align-items: center;
   gap: 2rem;
   margin: 5% 5%;
-  /* background-color: brown; */
+  padding-top: 20px;
 }
 .work {
   width: 20dvw;
@@ -128,15 +131,15 @@ button:disabled {
   line-height: 15px;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
   nav {
     display: block; /* Change to block display for mobile */
     height: auto; /* Adjust height for mobile */
   }
   .logo img {
     height: 80px; /* Adjust logo height for mobile */
-    left: 0; /* Reset left position */
-    top: 0; /* Reset top position */
+    /*left: 0; /* Reset left position */
+    /*top: 0; /* Reset top position */
   }
   .back-button {
     width: 100%; /* Adjust width for mobile */
@@ -149,6 +152,7 @@ button:disabled {
   main {
     width: 100%; /* Adjust width for mobile */
     line-height: 1.5; /* Adjust line height for mobile */
+    flex-direction: column;
   }
   .card {
     height: auto; /* Adjust height for mobile */
@@ -165,5 +169,11 @@ button:disabled {
   .font, .font-size {
     font-size: 16px; /* Adjust font size for mobile */
     line-height: 1.5; /* Adjust line height for mobile */
+  }
+}
+@media screen and (max-width: 550px){
+  .card{
+    flex-direction: column;
+    gap: 10rem;
   }
 }
