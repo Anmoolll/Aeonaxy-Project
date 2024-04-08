@@ -22,12 +22,14 @@ nav {
   width: 100px;
 }
 .back-button button {
+  font-size: 20px;
   width: 50%;
   height: 40px;
   margin-top: 40%;
   border-radius: 5px;
   border: none;
   background-color: #e5e5e5;
+  cursor: pointer;
 }
 main {
   width: 100dvw;
@@ -52,7 +54,7 @@ main .para {
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  margin: 5% 0%;
+  margin: 5% 5%;
   /* background-color: brown; */
 }
 .work {
@@ -61,6 +63,7 @@ main .para {
   border: 1px solid rgb(199, 199, 199);
   border-radius: 10px;
   padding: 10px 10px;
+  cursor: pointer;
 }
 .work img {
   width: 90%;
@@ -72,6 +75,7 @@ main .para {
   border: 1px solid rgb(199, 199, 199);
   border-radius: 10px;
   padding: 10px 10px;
+  cursor: pointer;
 }
 .hire img {
   width: 90%;
@@ -83,15 +87,20 @@ main .para {
   border: 1px solid rgb(199, 199, 199);
   border-radius: 10px;
   padding: 10px 10px;
+  cursor: pointer;
 }
 .inspo img {
   width: 90%;
   height: auto;
 }
+img {
+  transition: margin-top 0.3s ease;
+}
 input[type="radio"] {
   border: 0px;
   width: 100%;
   height: 2em;
+  cursor: pointer;
 }
 button[type="submit"] {
   /* margin-top: 1rem; */
@@ -109,4 +118,12 @@ button:disabled {
 }
 .hidden {
   display: none;
+}
+.font{
+    font-family: sans-serif;
+    line-height: 15px;
+}
+.font-size{
+  font-size: 20px;
+  line-height: 15px;
 }
