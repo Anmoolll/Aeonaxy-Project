@@ -1,0 +1,112 @@
+@font-face {
+  font-family: PLz;
+  src: url(../assets/PLZ.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: PLz;
+}
+nav {
+  display: flex;
+  gap: 3rem;
+  height: 110px;
+}
+.logo img {
+  height: 100px;
+  left: 10px;
+  top: -15px;
+}
+.back-button {
+  width: 100px;
+}
+.back-button button {
+  width: 50%;
+  height: 40px;
+  margin-top: 40%;
+  border-radius: 5px;
+  border: none;
+  background-color: #e5e5e5;
+}
+main {
+  width: 100dvw;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  line-height: 10px;
+}
+main h1 {
+  font-weight: 400;
+}
+main .para {
+  color: gray;
+}
+.card {
+  height: 250px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 5% 0%;
+  /* background-color: brown; */
+}
+.work {
+  width: 20dvw;
+  height: auto;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+.work img {
+  width: 90%;
+  height: auto;
+}
+.hire {
+  width: 20dvw;
+  height: auto;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+.hire img {
+  width: 90%;
+  height: auto;
+}
+.inspo {
+  width: 20dvw;
+  height: auto;
+  border: 1px solid rgb(199, 199, 199);
+  border-radius: 10px;
+  padding: 10px 10px;
+}
+.inspo img {
+  width: 90%;
+  height: auto;
+}
+input[type="radio"] {
+  border: 0px;
+  width: 100%;
+  height: 2em;
+}
+button[type="submit"] {
+  /* margin-top: 1rem; */
+  height: 40px;
+  width: 200px;
+  border: none;
+  background-color: #ea4b8b;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+button:disabled {
+  background-color: #f8b8d0;
+  cursor: not-allowed;
+}
+.hidden {
+  display: none;
+}
