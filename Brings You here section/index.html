@@ -22,24 +22,24 @@
         <p class="para">Select the option that best describes you. Don't worry, you can explore other options later.</p>
 
         <div class="card">
-            <div class="work">
+            <div class="work" onclick="changeBorderColorWork(this)">
                 <img src="../assets/onboarding-designer.png" alt="">
                 <p>I'm a designer looking to share my work</p>
                 <input type="radio" name="work" id="work">
             </div>
-            <div class="hire">
+            <div class="hire" onclick="changeBorderColorHire(this)">
                 <img src="../assets/assest2.png" alt="">
                 <p>I'm looking to hire a designer</p>
-                <input type="radio" name="work" id="hire">
+                <input type="radio" name="hire" id="hire">
             </div>
-            <div class="inspo">
+            <div class="inspo" onclick="changeBorderColorInspo(this)">
                 <img src="../assets/assest3.png" alt="">
                 <p>I'm looking for design inspiration</p>
-                <input type="radio" name="work" id="inspo">
+                <input type="radio" name="inspo" id="inspo">
             </div>
         </div>
         <p class="hidden">Anything else? you can select multiple</p>
-        <button type="submit" disabled="disabled">Finish</button>
+        <button class="Finish" type="submit" disabled="disabled">Finish</button>
         <p class="para">Or press RETURN</p>
     </main>
     <script src="./script.js"></script>
