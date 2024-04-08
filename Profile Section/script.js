@@ -15,9 +15,8 @@ function closePopup() {
 
 popup.addEventListener('click', function(event){
     if(event.target.tagName === 'IMG'){
-        console.log("Selected image: " + event.target.src);
-        profilePic.src = event.target.src; // Set the selected image as the profile picture
-        closePopup(); // Close the popup after selecting the image
+        profilePic.src = event.target.src; 
+        closePopup(); 
     }
 })
 
