@@ -8,8 +8,40 @@
     <title>Dribble - What brings you here</title>
 </head>
 <body>
-    
+    <nav>
+        <div class="logo">
+            <img src="../assets/logo.png" alt="Logo here">
+        </div>
+        <div class="back-button">
+            <a href="../Profile Section/index.html"><button>&lt</button></a>
+        </div>
+    </nav>
 
+    <main>
+        <h1>What brings you to Dribble?</h1>
+        <p class="para">Select the option that best describes you. Don't worry, you can explore other options later.</p>
+
+        <div class="card">
+            <div class="work">
+                <img src="../assets/onboarding-designer.png" alt="">
+                <p>I'm a designer looking to share my work</p>
+                <input type="radio" name="work" id="work">
+            </div>
+            <div class="hire">
+                <img src="../assets/assest2.png" alt="">
+                <p>I'm looking to hire a designer</p>
+                <input type="radio" name="work" id="hire">
+            </div>
+            <div class="inspo">
+                <img src="../assets/assest3.png" alt="">
+                <p>I'm looking for design inspiration</p>
+                <input type="radio" name="work" id="inspo">
+            </div>
+        </div>
+        <p class="hidden">Anything else? you can select multiple</p>
+        <button type="submit" disabled="disabled">Finish</button>
+        <p class="para">Or press RETURN</p>
+    </main>
     <script src="./script.js"></script>
 </body>
 </html>
