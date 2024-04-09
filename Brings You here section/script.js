@@ -25,6 +25,7 @@ function changeBorderColorWork(divWork){
 function changeBorderColorHire(divHire){
     divHire.style.border = "3px solid #ea4b8b"
     radioHire.checked=true;
+    message.style.display = 'block';
     messageHire.style.display = 'block'
     button.removeAttribute('disabled');
     divHire.querySelector("img").style.marginTop = '-20%';
@@ -33,6 +34,7 @@ function changeBorderColorHire(divHire){
 function changeBorderColorInspo(divInspo){
     divInspo.style.border = "3px solid #ea4b8b"
     radioInspo.checked=true;
+    message.style.display = 'block';
     messageInspo.style.display = 'block'
     button.removeAttribute('disabled');
     divInspo.querySelector("img").style.marginTop = '-20%';
