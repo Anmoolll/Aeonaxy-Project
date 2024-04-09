@@ -96,7 +96,7 @@ function validateForm() {
     // username.addEventListener("input", function () {
     //   username.style.backgroundColor = "rgb(240, 240, 240)";
     // });
-    error.innerHTML = "* This username already exists";
+    error.innerHTML = "* Username has already been taken";
     return false;
   } else {
     user_data.push({
