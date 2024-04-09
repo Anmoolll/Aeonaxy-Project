@@ -40,7 +40,6 @@ inputLocation.addEventListener("input", function(){
 
 inputLocation.addEventListener("keyup", function(e){
     if (e.key === 'Enter') {
-        console.log("ENter")
         button.click();
     }
 })
