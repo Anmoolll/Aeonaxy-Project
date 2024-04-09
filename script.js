@@ -6,7 +6,6 @@ const form = document.querySelector("#form");
 const email = document.querySelector("#email");
 const checkbox = document.querySelector("#terms");
 
-
 const isValidEmail = (email) => {
   const re =
     /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
@@ -92,10 +91,6 @@ function validateForm() {
       return v.username === usernameValue;
     })
   ) {
-    username.style.backgroundColor = "rgb(255,210,210)";
-    // username.addEventListener("input", function () {
-    //   username.style.backgroundColor = "rgb(240, 240, 240)";
-    // });
     error.innerHTML = "* Username has already been taken";
     return false;
   } else {
