@@ -2,7 +2,7 @@
   font-family: PLz;
   src: url(../assets/PLZ.ttf);
 }
-.para{
+.para {
   color: gray;
 }
 body {
@@ -21,7 +21,8 @@ nav {
 nav .logo {
   display: flex;
 }
-.logo ul, .profile ul {
+.logo ul,
+.profile ul {
   display: flex;
   align-items: center;
   text-align: center;
@@ -29,20 +30,20 @@ nav .logo {
   gap: 1rem;
   list-style: none;
 }
-.logo{
+.logo {
   margin-left: 2rem;
 }
 .logo img {
   height: 100px;
   left: 10px;
 }
-.profile{
+.profile {
   margin-right: 2rem;
 }
-.profile ul{
+.profile ul {
   align-items: center;
 }
-button{
+button {
   height: 40px;
   width: 70px;
   border: none;
@@ -51,57 +52,62 @@ button{
   border-radius: 5px;
   cursor: pointer;
 }
-input[type='text']{
+input[type="text"] {
   height: 40px;
 }
 
-main{
+main {
   align-items: center;
   text-align: center;
   font: gray;
   font-weight: 100;
   margin-bottom: 5rem;
 }
-main h1{
+main h1 {
   font-weight: 400;
 }
-main img{
+main img {
   height: 8rem;
 }
-main a{
+main a {
   text-decoration: none;
 }
-main a:link{
+main a:link {
   color: #ea4b8b;
 }
-footer{
+footer {
   font-size: 14px;
 }
-footer img{
+footer img {
   width: 100px;
 }
-.hero{
+.hero {
   display: flex;
   justify-content: space-between;
 }
-.hero .tag{
+.hero .tag {
   margin-left: 4rem;
   width: 60%;
 }
-.hero .list{
+.hero .list {
   display: flex;
   margin-right: 4rem;
 }
-.list ul{
+.list ul {
   list-style: none;
 }
 
-.list a{
+.list a {
   text-decoration: none;
 }
-.list a:link{
+.list a:link {
   color: gray;
 }
-hr{
+hr {
   margin: 4rem 4rem;
+}
+.currentYear {
+  margin-left: 4rem;
+  font-weight: 100;
+  color: gray;
 }
