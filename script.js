@@ -5,6 +5,7 @@ const username = document.querySelector("#username");
 const form = document.querySelector("#form");
 const email = document.querySelector("#email");
 const checkbox = document.querySelector("#terms");
+const caution = document.querySelector("#caution-img")
 
 const isValidEmail = (email) => {
   const re =
@@ -91,6 +92,7 @@ function validateForm() {
       return v.username === usernameValue;
     })
   ) {
+    caution.style.display = 'inline-block';
     error.innerHTML = "* Username has already been taken";
     return false;
   } else {
