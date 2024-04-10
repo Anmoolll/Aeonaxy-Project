@@ -134,14 +134,25 @@ button[type=submit]{
   cursor: pointer;
 }
 
-@media screen and (max-width: 600px){
-  .art{
+@media screen and (max-width: 600px) {
+  .member{
+    position: sticky;
+    right: 1rem;
+    top: 2rem;
+  }
+
+  .art {
     display: none;
   }
-  .name-wrapper{
+  .name-wrapper {
     flex-direction: column;
   }
-  .terms-text{
+  .terms-text {
     font-size: small;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .member {
+    margin: 1rem 1rem;
   }
 }
