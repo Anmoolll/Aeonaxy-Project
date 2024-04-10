@@ -42,4 +42,16 @@ function validateForm() {
     return false;
   }
   return true;
+
+  let user_data = JSON.parse(localStorage.getItem("user")) || [];
+
+  const user = user_data.find((v) => v.username === usernameValue && v.password === passwordValue);
+
+  if (user) {
+    alert("Login successful");
+    return true; // Allow the form to be submitted
+  } else {
+    alert("Login failed");
+    return false; // Prevent the form from being submitted
+  }
 }
