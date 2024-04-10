@@ -111,6 +111,9 @@ main a {
 main a:link {
   color: #ea4b8b;
 }
+main a:visited{
+  color: #ea4b8b;
+}
 footer {
   font-size: 14px;
 }
