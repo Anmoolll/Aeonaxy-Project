@@ -1,15 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="../assets/logo.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
-    <title>Dribble - Sign in</title>
-</head>
-<body>
-    <h1>WELCOME</h1>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Dribble - Welcom Back</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="art">
+        <h1>Discover the world's top Designer & Creative.</h1>
+        <br /><br />
+        <img src="../assets/assest4.png" alt="vector-art" />
+      </div>
+      <div class="form" onsubmit="return validateForm()">
+        <p class="member">New to Dribbe? <a href="../index.html">Sign up</a></p>
+        <div class="form-class">
+          <form id="form" action="./Profile Section/index.html">
+            <h1 class="sign">Welcome Back! Sign in to Dribble</h1>
+            <p class="Error"></p>
 
+            <div class="name-wrapper">
+              <div class="username ">
+                <label for="username"><img src="./assets/caution.png" alt="caution" id="caution-img">Username</label><br />
+                <input type="text" name="username" id="username"  />
+              </div>
+            </div>
+
+            <div class="email-pass-wrapper">
+              <div class="password ">
+                <label for="password">Password</label><br />
+                <input
+                  type="password"
+                  name="password"
+                  id="password"
+                  placeholder="6+ characters"
+                />
+              </div>
+            </div>
+
+            <br />
+            <div class="terms">
+              <div class="check">
+                <input type="checkbox" name="terms" id="terms" />
+              </div>
+              <div class="terms-wrapper">
+                <label class="terms-text">
+                  Clicking here means you're okay with our
+                  <a href="./Terms/index.html">Terms of Service,</a>
+                  <a href="./Privacy Policy/index.html">Privacy Policy,</a> and our default
+                  <a href="./Notification setting/index.html">Notification Settings.</a></label
+                >
+              </div>
+            </div>
+            <div>
+              <button type="submit" id="submit"><b>Sign in</b></button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
     <script src="./script.js"></script>
-</body>
+  </body>
 </html>

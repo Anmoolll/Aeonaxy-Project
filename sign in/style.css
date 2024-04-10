@@ -1,0 +1,144 @@
+@font-face {
+  font-family: PLz;
+  src: url(../assets/PLZ.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+  height: 100dvh;
+  display: flex;
+}
+
+.art {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  text-align: center;
+  background-color: #f1d28a;
+  padding: 50px;
+  width: 40%;
+}
+
+.art img {
+  width: 100%;
+  height: auto;
+}
+
+.art h1 {
+  color: #775718;
+  font-family: PLz;
+  /* font-size: 600; */
+  font-weight: 400;
+}
+.member {
+  margin: 20px;
+  position: absolute;
+  top: 10px;
+  right: 0;
+  font-family: sans-serif;
+  font-weight: 500;
+}
+.member a {
+  text-decoration: none;
+}
+.form {
+  width: 100%;
+  height: 100dvh;
+  align-items: center;
+  /* text-align: center; */
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.form-class {
+  margin: 10%;
+  width: 100%;
+  max-width: 650px;
+}
+.sign {
+  font-family: PLz;
+  font-weight: 400;
+}
+
+.Error {
+  color: red;
+}
+
+label {
+  font-family: PLz;
+  font-size: 18px;
+}
+
+input {
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background-color: rgb(240, 240, 240);
+}
+
+.name-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+.username img {
+  width: 10px;
+  height: 10px;
+  margin: 3px 3px;
+  /* visibility: unset; */
+  display: none;
+}
+#username{
+    width: 22rem;
+}
+.password {
+  margin-top: 2rem;
+}
+#password {
+  width: 22rem;
+}
+.terms {
+  display: flex;
+  gap: 0.5rem;
+}
+.terms a {
+  text-decoration: none;
+}
+.terms-text {
+  font-family: sans-serif;
+  color: grey;
+}
+.terms-wrapper {
+  width: 50%;
+  max-width: 650px;
+}
+
+button[type="submit"] {
+  margin-top: 2rem;
+  height: 40px;
+  width: 170px;
+  border: none;
+  background-color: #ea4b8b;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  .art {
+    display: none;
+  }
+  .name-wrapper {
+    flex-direction: column;
+  }
+  .terms-text {
+    font-size: small;
+  }
+}
