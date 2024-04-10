@@ -88,8 +88,17 @@ button {
   border-radius: 5px;
   cursor: pointer;
 }
+.search-icon{
+  position: absolute;
+  right: 25rem;
+  top: 2.3rem;
+  display: none;
+}
 input[type="text"] {
   height: 40px;
+  border: none;
+  border-radius: 8px;
+  background-color: #f2f4f5;
 }
 
 main {
@@ -97,7 +106,8 @@ main {
   text-align: center;
   font: gray;
   font-weight: 100;
-  margin-bottom: 5rem;
+  margin: 5% 5%;
+  height: 100vh;
 }
 main h1 {
   font-weight: 400;
@@ -123,6 +133,7 @@ footer img {
 .hero {
   display: flex;
   justify-content: space-between;
+  /* max-width: 720px; */
 }
 .hero .tag {
   margin-left: 4rem;
@@ -130,7 +141,7 @@ footer img {
 }
 .hero .list {
   display: flex;
-  margin-right: 4rem;
+  margin-right: 4%;
 }
 .list ul {
   list-style: none;
@@ -141,6 +152,9 @@ footer img {
 }
 .list a:link {
   color: gray;
+}
+.test{
+  display: flex;
 }
 hr {
   margin: 4rem 4rem;
@@ -158,12 +172,33 @@ hr {
     display: block;
   }
 }
-
-@media (max-width: 400px) {
+@media (max-width:750px){
+  .hero{
+    flex-flow: row wrap;
+  }
+  .test{
+    flex-direction: column;
+  }
+}
+@media (max-width:610px){
+  .profile button{
+    display: none;
+  }
+  .cart-image{
+    display: none;
+  }
+}
+@media (max-width: 450px) {
   .sidebar {
     width: 100%;
   }
   .menu-button {
     display: block;
+  }
+  #search{
+    width: 30px;
+  }
+  .profile img{
+    width: 30px;
   }
 }
