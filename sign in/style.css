@@ -95,8 +95,8 @@ input {
   /* visibility: unset; */
   display: none;
 }
-#username{
-    width: 22rem;
+#username {
+  width: 22rem;
 }
 .password {
   margin-top: 2rem;
@@ -132,6 +132,12 @@ button[type="submit"] {
 }
 
 @media screen and (max-width: 600px) {
+  .member{
+    position: sticky;
+    right: 1rem;
+    top: 2rem;
+  }
+
   .art {
     display: none;
   }
@@ -140,5 +146,10 @@ button[type="submit"] {
   }
   .terms-text {
     font-size: small;
+  }
+}
+@media screen and (max-width: 1050px) {
+  .member {
+    margin: 1rem 1rem;
   }
 }
