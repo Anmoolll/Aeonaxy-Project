@@ -133,18 +133,27 @@ footer img {
 .hero {
   display: flex;
   justify-content: space-between;
-  /* max-width: 720px; */
+  /* margin: 4rem -50rem 5rem 2rem; */
+  margin: 5% 5%;
+  /* width: 100%; */
 }
-.hero .tag {
-  margin-left: 4rem;
-  width: 60%;
+.hero .tag{
+  flex:1;
+}
+.icons img{
+  height: 20px;
+  width: 20px;
+  margin: 2px 2px;
 }
 .hero .list {
   display: flex;
-  margin-right: 4%;
+  flex: 4;
+  width: 100%;
+  flex-grow: 1;
 }
-.list ul {
+ul {
   list-style: none;
+  line-height: 1.5rem;
 }
 
 .list a {
@@ -156,11 +165,28 @@ footer img {
 .test{
   display: flex;
 }
+/* .list .for-designers,
+.list .hire-designers,
+.list .company,
+.list .directories,
+.list .design-resources{
+  flex: 1;
+} */
 hr {
   margin: 4rem 4rem;
 }
+.footer-list{
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem 3rem 1rem;
+}
+.footer-list img{
+  height: 30px;
+}
 .currentYear {
-  margin-left: 4rem;
   font-weight: 100;
   color: gray;
 }
@@ -187,6 +213,9 @@ hr {
   .cart-image{
     display: none;
   }
+  .footer-list{
+    flex-direction: column;
+  }
 }
 @media (max-width: 450px) {
   .sidebar {
@@ -200,5 +229,11 @@ hr {
   }
   .profile img{
     width: 30px;
+  }
+  .small{
+    font-size: 16px;
+  }
+  .smaller{
+    font-size: 14px;
   }
 }

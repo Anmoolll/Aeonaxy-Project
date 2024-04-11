@@ -10,7 +10,7 @@
   <body>
     <nav>
       <div class="logo">
-        <img src="../assets/FinalLogo.svg" alt="LOGO" />
+        <img src="../assets/logoV2.png" alt="LOGO" />
         <ul class="sidebar">
           <li><a onclick="hideSidebar()" href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
           <li><a href="#">Inspiration</a></li>
@@ -45,34 +45,40 @@
     <main>
       <h1>Please verify your email...</h1>
       <img src="../assets/mailconfirmation.png" alt="Mail confirmation" />
-      <p class="para">
+      <p class="para small">
         Please verify your email address. We've sent a confirmation mail to:
       </p>
       <p>mail name here</p>
-      <p class="para">
+      <p class="para small">
         Click the confirmation link in the email to begin using Dribble.
       </p>
       <br />
-      <p class="para">
+      <p class="para smaller">
         Didn't receive the email? Check your Spam Folder, it may have been
         caught by a filter. If you still don't see it, you can
         <a href="#">resend the confirmation email.</a>
       </p>
       <br />
-      <p class="para">Wrong email address? <a href="#">Change it</a></p>
+      <p class="para smaller">Wrong email address? <a href="#">Change it</a></p>
     </main>
     <footer>
       <div class="hero">
         <div class="tag">
-          <img src="../assets/FinalLogo.svg" alt="Logo" />
+          <img src="../assets/logoV2.png" alt="Logo" />
           <p>
             Dribble is the world's leading community for creatives to share,
             grow, and get hired
           </p>
+          <div class="icons">
+            <img src="../assets/dribble-icon.svg" alt="Dribble icon">
+            <img src="../assets/twitter.svg" alt="twitter icon">
+            <img src="../assets/facebook.svg" alt="facebook icon">
+            <img src="../assets/instagram.svg" alt="instagram icon">
+            <img src="../assets/pinterest.svg" alt="pinterest icon">
+          </div>
         </div>
         <div class="list">
           <div class="test">
-
             <div class="for-designers">
               <ul>
                 <h3>For Designers</h3>
@@ -143,9 +149,16 @@
     </footer>
     <hr />
     <div>
-      <p class="currentYear">
-        &copy; <span id="currentYear"></span> Dribble. All rights reserved.
-      </p>
+      <ul class="footer-list">
+        <li>
+          <p class="currentYear smaller">
+            &copy; <span id="currentYear"></span> Dribble. All rights reserved.
+          </p>
+        </li>
+        <li>
+          <p class="smaller"><b>20,501,854</b> <span class="para"> shots dribbled </span><img src="../assets/dribble-color.svg" alt="Dribble logo"></p>
+        </li>
+      </ul>
     </div>
     <script src="./script.js"></script>
   </body>
