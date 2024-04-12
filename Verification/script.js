@@ -13,7 +13,6 @@ function hideSidebar() {
 }
 
 
-// Retrieve user data from local storage
 var user_data = JSON.parse(localStorage.getItem("user")) || [];
 
 // Extract email addresses
