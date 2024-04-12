@@ -10,7 +10,8 @@ User Sign-up: Allows new users to create an account. The sign-up form includes f
 Profile Creation: After sign-up, users can create their profile.
 Email Verification: After sign-up, an email verification process is initiated.
 What Brings You Here Section: A section for users to specify their intentions or goals.
-Additional Pages: Includes Terms and Conditions, Privacy Policy, and Notification Settings pages.
+Additional Pages: Includes Terms and Conditions, Privacy Policy, and Notification Settings pages.  
+Local storage concept in used for the minimal database of this project hence The whole data is stored in their own browser only.  
 
 # Tech Stack
 
