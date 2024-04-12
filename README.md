@@ -22,3 +22,7 @@ Javascript: Used for the basic logic of the website.
 # Getting Started
 
 To get started with the project, clone the repository and open the 'index.html' file in the browser.
+
+# Website ScreenShots
+
+![Preview of ScreenShots](./assets/README%20Images.jpg)
