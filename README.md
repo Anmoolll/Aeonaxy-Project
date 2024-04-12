@@ -26,3 +26,4 @@ To get started with the project, clone the repository and open the 'index.html' 
 # Website ScreenShots
 
 ![Preview of ScreenShots](./assets/README%20Images.jpg)
+![Preview of ScreenShots](./assets/README%20Images_2.jpg)
