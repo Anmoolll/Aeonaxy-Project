@@ -14,9 +14,9 @@ Additional Pages: Includes Terms and Conditions, Privacy Policy, and Notificatio
 
 # Tech Stack
 
-HTML: Used for the basic structure of the website.
-CSS: Used for the styling of the website.
-Javascript: Used for the basic logic of the website.
+HTML: Used for the basic structure of the website.  
+CSS: Used for the styling of the website.  
+Javascript: Used for the basic logic of the website.  
 
 # Getting Started
 
